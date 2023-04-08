@@ -1,0 +1,82 @@
+body {
+    background: radial-gradient(
+        circle at center,
+        rgba(150,150,150,0.5) 0%,
+        rgba(50,50,50,0.5) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#canvas {
+    background-color: white;
+    min-width: 60%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    min-height: 350px;
+  }
+
+#bigPicture {
+    max-height: 350px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+#stepBack{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigPicture{
+    position: relative;
+    width: 90%;
+}
+
+#overlay {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: 1;
+    background: gray;
+    background: rgba(0, 0, 0, 0.5); /* gray background with 50% opacity */
+    width: 100%; /* full width */
+    color: white;
+    padding: 10px;
+}
+
+#stepForward{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonBack{
+    background: transparent;
+    border: none;
+}
+
+#buttonForward{
+    transform: rotate(180deg);
+    background: transparent;
+    border: none;
+}
+
+#buttonBack:hover, #buttonForward:hover{
+    opacity: 0.5;
+}
+
+#overlay h2, p{
+    text-align:left;
+}
