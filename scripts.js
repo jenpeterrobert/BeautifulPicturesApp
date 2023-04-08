@@ -5,7 +5,7 @@ var imagesData = [
       description: 'This is the first photo'
     },
     {
-      photo: 'images/download (4).jpeg',
+      photo: 'images/photo1.jpeg',
       title: 'Photo 2',
       description: 'This is the second photo'
     },
@@ -15,17 +15,17 @@ var imagesData = [
       description: 'This is the third photo'
     },
     {
-      photo: 'images/photo-1542856391-010fb87dcfed.jpeg',
+      photo: 'images/photo2.jpg',
       title: 'Photo 4',
       description: 'This is the fourth photo'
     },
     {
-      photo: 'images/photo-1476514525535-07fb3b4ae5f1.jpeg',
+      photo: 'images/photo3.jpg',
       title: 'Photo 5',
       description: 'This is the fifth photo'
     },
     {
-      photo: 'images/wp3103595.jpg',
+      photo: 'images/1369012.jpg',
       title: 'Photo 6',
       description: 'This is the sixth photo'
     }
@@ -37,6 +37,8 @@ $('#photo').attr('src', imagesData[currentPhoto].photo);
 
 function loadPhoto(photoNumber) {
     $('#photo').attr('src', imagesData[photoNumber].photo);
+    $('#title').text(imagesData[photoNumber].title);
+    $('#description').text(imagesData[photoNumber].description);
   }
 
 loadPhoto(currentPhoto);
